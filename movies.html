@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        MOVIES
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .container .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            margin: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .container .card .content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: 0.5s;
+        }
+
+        .container .card:hover .content {
+            transform: translateY(-20px);
+        }
+
+        .container .card .content .imgBx {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .container .card .content .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container .card .content .contentBx h3 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0 10px;
+            line-height: 1.1em;
+        }
+
+        .container .card .content .contentBx h3 span {
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: initial;
+        }
+
+        .container .card .sci {
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+        }
+
+        .container .card .sci li {
+            list-style: none;
+            margin: 0 10px;
+            transform: translateY(40px);
+            transition: 0.5s;
+            opacity: 0;
+        }
+
+        .container .card:hover .sci li {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
+        .container .card .sci li a {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .search_bar {
+            width: 732px;
+            margin-top: 14px;
+            height: 57px;
+            border-radius: 12px;
+            MARGIN-LEFT: 30px
+        }
+
+        .wishlist_button {
+            margin-left: 123px;
+            /* margin-bottom: 40px; */
+            margin-top: 21px;
+            border: 2px solid #230b32;
+            width: 341px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: WHITE;
+            background-color: #230b32;
+            border-radius: 9px;
+            font-size: 21px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            height: 48px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <navbar class="navbar">
+        <h6> <a href="#">HOME</a></h6>
+        <h6><a href="#">MOVIES</a></h6>
+        <h6><a href="mailto:akshthapkk@gmail.com?">SHOWS AND SERIES</a></h6>
+        <h6><a href="#">LOGIN/SIGN-UP</a></h6>
+        <h6><a href="mailto:akshthapkk@gmail.com?">ACCOUNT</a></h6>
+    </navbar>
+
+
+    <div class="search_login">
+        <input class="search_bar" placeholder="SEARCH MOVIES AND SHOWS">
+
+        <div class="wishlist_button"> MY WISHLIST</div>
+    </div>
+
+    <div class="ott">
+        <div class="otthding">MOVIE RECOMMENDATIONS FOR YOU</div>
+        <div class="mid">
+            <div class="box-container">
+                <div class="box"><img class="img"
+                        src="https://d1fmx1rbmqrxrr.cloudfront.net/cnet/i/edit/2023/01/One-piece2.jpg">
+                    <desc class="imdb">BROWSE IN IMBD</desc>
+                    <desc class="yt">WATCH TRAILER ON YOUTUBE </desc>
+                    <desc class="wishl">ADD TO MY WISHLIST </desc>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box"><img class="img"
+                        src=" https://www.admissionlogin.in/wp-content/uploads/2022/05/scam2003.jpg">
+                    <desc class="imdb">BROWSE IN IMBD</desc>
+                    <desc class="yt">WATCH TRAILER ON YOUTUBE </desc>
+                    <desc class="wishl">ADD TO MY WISHLIST </desc>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box"><img class="img"
+                        src="https://th.bing.com/th/id/OIP.m_C6NpGTixprsu99ote8yQHaJ9?pid=ImgDet&rs=1">
+                    <desc class="imdb">BROWSE IN IMBD</desc>
+                    <desc class="yt">WATCH TRAILER ON YOUTUBE </desc>
+                    <desc class="wishl">ADD TO MY WISHLIST </desc>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box"><img class="img"
+                        src="https://assets.mycast.io/posters/secret-invasion-fan-casting-poster-226828-large.jpg">
+                    <desc class="imdb">BROWSE IN IMBD</desc>
+                    <desc class="yt">WATCH TRAILER ON YOUTUBE </desc>
+                    <desc class="wishl">ADD TO MY WISHLIST </desc>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box"><img class="img"
+                        src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/01/10084020/Farzi.jpg">
+                    <desc class="imdb">BROWSE IN IMBD</desc>
+                    <desc class="yt">WATCH TRAILER ON YOUTUBE </desc>
+                    <desc class="wishl">ADD TO MY WISHLIST </desc>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box"><img class="img"
+                        src="https://th.bing.com/th/id/OIP.pFOxgYknE7O8Z5sXVFD_TgAAAA?pid=ImgDet&rs=1">
+                    <desc class="imdb">BROWSE IN IMBD</desc>
+                    <desc class="yt">WATCH TRAILER ON YOUTUBE </desc>
+                    <desc class="wishl">ADD TO MY WISHLIST </desc>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="https://th.bing.com/th/id/OIP.pFOxgYknE7O8Z5sXVFD_TgAAAA?pid=ImgDet&rs=1">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Lion<br><span>Happy Birthday</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li>
+                        <a href="">happy</a>
+                    </li>
+                    <li>
+                        <a href="">birth</a>
+                    </li>
+                    <li>
+                        <a href="">day</a>
+                    </li>
+                </ul>
+            </div>
+            <footer class="footer">
+                <h6><a href="#">REPORT BUG </a></h6>
+                <h6><a href="mailto:akshthapkk@gmail.com?">CONTACT DEVELOPER</a></h6>
+                <!-- <h6><a href="mailto:akshthapkk@gmail.com?">CONTACT</a></h6> -->
+            </footer>
+
+
+
+
+</body>
+
+</html>
