@@ -15,7 +15,7 @@ body {
     justify-content: center;
     margin-left: -6px;
     margin-top: -4px;
-    height: 82px;
+    height: 58px;
     align-items: center;
 }
 
@@ -34,6 +34,9 @@ H6 {
     font-size: 16px;
     /* padding: 11px; */
     margin-left: 171px;
+}
+.heading-login{
+    display: flex;
 }
 
 
@@ -56,32 +59,41 @@ navbar h6 a:hover {
 }
 
 .top {
-    background-color: #14161e49;
-    background-image: url(https://cdn.wallpapersafari.com/46/81/215NeC.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: 2px solid #14161e;
-    height: 356px;
-    background-size: 1487px 434px;
+    /* Other styles for your .top element */
+    position: relative;
+    overflow: hidden;
+    height: 258px;
     width: 100%;
-}
+    border: 2px solid #14161e;
+  }
+  
+  .top::before {
+    content: "";
+    background-image: url('https://cdn.wallpapersafari.com/46/81/215NeC.jpg'); /* Replace with your image URL */
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background layer behind the content */
+  }
 
 .search_login {
     display: flex;
 }
 
 .login {
-    margin-left: 884px;
+    margin-left: 84px;
     /* margin-bottom: 40px; */
-    margin-top: 8px;
-    border: 2px solid #0e5421;
+    margin-top: -78px;
+    border: 2px solid #152419;
     width: 341px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: WHITE;
-    background-color: #0e5421;
+    background-color: #152419;
     border-radius: 9px;
     font-size: 21px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -90,16 +102,16 @@ navbar h6 a:hover {
 
 .login:hover {
     color: white;
-    background-color: #108d31;
+    background-color: #0c100d;
     cursor: pointer;
-    border: 2px solid #108d31;
+    border: 2px solid #0c100d;
 }
 
 
 
 .searchbar {
     width: 730px;
-    margin-top: -35px;
+    margin-top: -77px;
     height: 57px;
     border-radius: 12px;
     MARGIN-LEFT: 257px;
@@ -132,7 +144,7 @@ p {
     font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: cornsilk;
-    margin-left: 353px;
+    margin-left: 393px;
     margin-top: 27px;
 }
 
@@ -150,7 +162,7 @@ p {
 .mid {
     display: grid;
     grid-template-columns: 208px 208px 208px 190px;
-    grid-column-gap: 146px;
+    grid-column-gap: 130px;
     grid-row-gap: 160px;
     margin-top: 25px;
 }
@@ -158,7 +170,7 @@ p {
 .box-container {
     border: 2px solid black;
     height: 412px;
-    width: 324px;
+    width: 296px;
     background-color: white;
     box-shadow: 6px 10px 8px 6px black;
 }
@@ -184,7 +196,7 @@ p {
 }
 
 .img {
-    width: 317px;
+    width: 293px;
     height: 325px;
     margin-left: 3px;
 }
@@ -211,7 +223,7 @@ desc {
     justify-content: center;
     border: 2px solid white;
     margin-top: -4px;
-    width: 316px;
+    width: 290px;
     height: 39px;
     margin-left: 3px;
 }
@@ -267,7 +279,7 @@ desc {
         } */
 
 .onsc {
-    margin-top: -25px;
+    margin-top: 29px;
     font-size: 32px;
     border-left: 17px solid yellow;
     line-height: 91px;
@@ -357,6 +369,7 @@ div.scroll-container {
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
+    height: 459px;
 }
 
 
@@ -372,7 +385,7 @@ div.scroll-container iframe {
     padding: 10px;
     width: 60%;
     background-color: black;
-    height: 565px;
+    height: 439px;
     margin-left: 22px;
 }
 
